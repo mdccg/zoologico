@@ -1,0 +1,326 @@
+{
+  "species": [
+    {
+      "id": 1,
+      "nome_cientifico": "Felis catus",
+      "nome_popular": "Gato",
+      "habitat": "Escassos bosques de coníferas ou caducifólias da Europa e da Ásia.",
+      "familia": "Felídeos",
+      "ordem": "Carnívoros"
+    },
+    {
+      "id": 2,
+      "nome_cientifico": "Canis lupus familiaris",
+      "nome_popular": "Cachorro",
+      "habitat": "Predominantemente centros urbanos com casas, apartamentos etc.",
+      "familia": "Canídeos",
+      "ordem": "Carnívoros"
+    },
+    {
+      "id": 3,
+      "nome_cientifico": "Ornithorhynchus anatinus",
+      "nome_popular": "Onitorrinco",
+      "habitat": "Principalmente na costa leste da Austrália, desde o extremo norte do estado de Queensland até a ilha do estado da Tasmânia.",
+      "familia": "Ornithorhynchidae",
+      "ordem": "Monotremata"
+    },
+    {
+      "id": 4,
+      "nome_cientifico": "Anatidae",
+      "nome_popular": "Pato",
+      "habitat": "Corpos d'água, como margens de rios, lagos, pantanais e áreas alagadas.",
+      "familia": "Anatidae",
+      "ordem": "Anseriformes"
+    },
+    {
+      "id": 5,
+      "nome_cientifico": "Nymphicus hollandicus",
+      "nome_popular": "Calopsita",
+      "habitat": "Nativa da Austrália, na Oceania.",
+      "familia": "Cacatua",
+      "ordem": "Psittaciformes"
+    }
+  ],
+  "cages": [
+    {
+      "id": 1,
+      "codigo": 1,
+      "area": 10.00
+    },
+    {
+      "id": 2,
+      "codigo": 3,
+      "area": 10.00
+    },
+    {
+      "id": 3,
+      "codigo": 5,
+      "area": 10.00
+    },
+    {
+      "id": 4,
+      "codigo": 7,
+      "area": 10.00
+    },
+    {
+      "id": 5,
+      "codigo": 9,
+      "area": 10.00
+    },
+    {
+      "id": 6,
+      "codigo": 11,
+      "area": 10.00
+    },
+    {
+      "id": 7,
+      "codigo": 13,
+      "area": 10.00
+    },
+    {
+      "id": 8,
+      "codigo": 15,
+      "area": 10.00
+    },
+    {
+      "id": 9,
+      "codigo": 17,
+      "area": 10.00
+    },
+    {
+      "id": 10,
+      "codigo": 19,
+      "area": 10.00
+    }
+  ],
+  "specimen": [
+    {
+      "numero_serie": 2,
+      "apelido": "Juninho",
+      "especie_id": 1,
+      "jaula_id": 1
+    },
+    {
+      "numero_serie": 4,
+      "apelido": "Mexilhãozinho",
+      "especie_id": 1,
+      "jaula_id": 1
+    },
+    {
+      "numero_serie": 6,
+      "apelido": "Rafael de Azevedo Castro",
+      "especie_id": 1,
+      "jaula_id": 2
+    },
+    {
+      "numero_serie": 8,
+      "apelido": "Miranda",
+      "especie_id": 1,
+      "jaula_id": 2
+    },
+    {
+      "numero_serie": 10,
+      "apelido": "Leandro Magalhães de Oliveira",
+      "especie_id": 2,
+      "jaula_id": 3
+    },
+    {
+      "numero_serie": 12,
+      "apelido": "Paulo Daniel Moraes Ribeiro",
+      "especie_id": 2,
+      "jaula_id": 3
+    },
+    {
+      "numero_serie": 14,
+      "apelido": "Luiz Jackes",
+      "especie_id": 2,
+      "jaula_id": 4
+    },
+    {
+      "numero_serie": 16,
+      "apelido": "Kleber Bambam",
+      "especie_id": 2,
+      "jaula_id": 4
+    },
+    {
+      "numero_serie": 18,
+      "apelido": "",
+      "especie_id": 3,
+      "jaula_id": 5
+    },
+    {
+      "numero_serie": 20,
+      "apelido": "Doja Cat",
+      "especie_id": 3,
+      "jaula_id": 5
+    },
+    {
+      "numero_serie": 22,
+      "apelido": "Shaolin, o matador de porco",
+      "especie_id": 3,
+      "jaula_id": 6
+    },
+    {
+      "numero_serie": 24,
+      "apelido": "Kevin Costa",
+      "especie_id": 3,
+      "jaula_id": 6
+    },
+    {
+      "numero_serie": 26,
+      "apelido": "",
+      "especie_id": 4,
+      "jaula_id": 7
+    },
+    {
+      "numero_serie": 28,
+      "apelido": "",
+      "especie_id": 4,
+      "jaula_id": 7
+    },
+    {
+      "numero_serie": 30,
+      "apelido": "",
+      "especie_id": 4,
+      "jaula_id": 8
+    },
+    {
+      "numero_serie": 32,
+      "apelido": "",
+      "especie_id": 4,
+      "jaula_id": 8
+    },
+    {
+      "numero_serie": 34,
+      "apelido": "",
+      "especie_id": 5,
+      "jaula_id": 9
+    },
+    {
+      "numero_serie": 36,
+      "apelido": "",
+      "especie_id": 5,
+      "jaula_id": 9
+    },
+    {
+      "numero_serie": 38,
+      "apelido": "",
+      "especie_id": 5,
+      "jaula_id": 10
+    },
+    {
+      "numero_serie": 40,
+      "apelido": "",
+      "especie_id": 5,
+      "jaula_id": 10
+    }
+  ],
+  "caretakers": [
+    {
+      "id": 1,
+      "matricula": "628ecdcbca9a6c3d1f29ca62",
+      "nome": "Sidney Roberto de Sousa",
+      "data_nascimento": "1898-03-12"
+    },
+    {
+      "id": 2,
+      "matricula": "628ecdeb3cb28f9039506ee2",
+      "nome": "Inês Eustáquio Caetano Ribeiro",
+      "data_nascimento": "1990-03-25"
+    },
+    {
+      "id": 3,
+      "matricula": "628ecdefb2160596556f3c59",
+      "nome": "Iury Feitosa da Rocha",
+      "data_nascimento": "1989-02-24"
+    },
+    {
+      "id": 4,
+      "matricula": "628ecdf289b981c9624e74ef",
+      "nome": "Matheus Daniel Cristal Comparotto Gomes",
+      "data_nascimento": "2001-11-27"
+    }
+  ],
+  "intercalations": [
+    {
+      "zelador_id": 1,
+      "jaula_id": 1
+    },
+    {
+      "zelador_id": 2,
+      "jaula_id": 1
+    },
+    {
+      "zelador_id": 3,
+      "jaula_id": 2
+    },
+    {
+      "zelador_id": 4,
+      "jaula_id": 2
+    },
+    {
+      "zelador_id": 1,
+      "jaula_id": 3
+    },
+    {
+      "zelador_id": 2,
+      "jaula_id": 3
+    },
+    {
+      "zelador_id": 3,
+      "jaula_id": 4
+    },
+    {
+      "zelador_id": 4,
+      "jaula_id": 4
+    },
+    {
+      "zelador_id": 1,
+      "jaula_id": 5
+    },
+    {
+      "zelador_id": 2,
+      "jaula_id": 5
+    },
+    {
+      "zelador_id": 3,
+      "jaula_id": 6
+    },
+    {
+      "zelador_id": 4,
+      "jaula_id": 6
+    },
+    {
+      "zelador_id": 1,
+      "jaula_id": 7
+    },
+    {
+      "zelador_id": 2,
+      "jaula_id": 7
+    },
+    {
+      "zelador_id": 3,
+      "jaula_id": 8
+    },
+    {
+      "zelador_id": 4,
+      "jaula_id": 8
+    },
+    {
+      "zelador_id": 1,
+      "jaula_id": 9
+    },
+    {
+      "zelador_id": 2,
+      "jaula_id": 9
+    },
+    {
+      "zelador_id": 3,
+      "jaula_id": 10
+    },
+    {
+      "zelador_id": 4,
+      "jaula_id": 10
+    }
+  ]
+}
