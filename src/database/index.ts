@@ -67,7 +67,7 @@ export const createTables = async () => {
 
 export const endConnection = async () => {
   await sql.end();
-  console.log('ϟ Malfeito feito');
+  console.log('⚡ Malfeito feito');
 }
 
 export default sql;

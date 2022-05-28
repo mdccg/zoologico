@@ -20,31 +20,33 @@ export const saveSpecimen = async (specimen: Specimen) => {
   return Number(id);
 }
 
-export const getSpecimenBySpecies = async (species: Species) /* FIXME retorno não deu certo */ => {
+export const getSpecimenBySpecies = async (species: Species): Promise<Specimen[]> => {
   const response = await sql`
     SELECT * FROM especimes
       INNER JOIN especies ON especimes.especie_id = especies.id
       WHERE especies.id = ${`${species.id}`};
   `;
 
-  const specimen = response.map((jsonObject) => getSpecimen(jsonObject));
+  const promises: Promise<Specimen>[] = response.map(async (jsonObject) => await getSpecimen(jsonObject));
+  const specimen = await Promise.all(promises);
 
   return specimen;
 }
 
-export const getSpecimenByCage = async (cage: Cage) /* FIXME retorno não deu certo */ => {
+export const getSpecimenByCage = async (cage: Cage): Promise<Specimen[]> => {
   const response = await sql`
     SELECT * FROM especimes
       INNER JOIN jaulas ON especimes.jaula_id = jaulas.id
       WHERE jaulas.id = ${`${cage.id}`};
   `;
 
-  const specimen = response.map((jsonObject) => getSpecimen(jsonObject));
+  const promises = response.map(async (jsonObject) => await getSpecimen(jsonObject));
+  const specimen = await Promise.all(promises);
 
   return specimen;
 }
 
-export const getSpecimenByCaretaker = async (caretaker: Caretaker) /* FIXME retorno não deu certo */ => {
+export const getSpecimenByCaretaker = async (caretaker: Caretaker): Promise<Specimen[]> => {
   const response = await sql`
     SELECT * FROM especimes
       INNER JOIN jaulas ON especimes.jaula_id = jaulas.id
@@ -52,7 +54,8 @@ export const getSpecimenByCaretaker = async (caretaker: Caretaker) /* FIXME reto
       WHERE zeladores_jaulas.zelador_id = ${`${caretaker.id}`};
   `;
 
-  const specimen = response.map((jsonObject) => getSpecimen(jsonObject));
-
+  const promises = response.map(async (jsonObject) => await getSpecimen(jsonObject));
+  const specimen = await Promise.all(promises);
+  
   return specimen;
 }

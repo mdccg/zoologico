@@ -11,8 +11,7 @@ const main = async () => {
 
   const rawCatSpecies = await sql`SELECT * FROM especies WHERE id = 1;`;
   const catSpecies = getSpecies(rawCatSpecies[0]);
-  const felinePromises = await getSpecimenBySpecies(catSpecies);
-  const allCats = await Promise.all(felinePromises);
+  const allCats = await getSpecimenBySpecies(catSpecies);
   
   console.table(catSpecies);
   console.log(allCats);

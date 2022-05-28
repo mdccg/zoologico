@@ -27,7 +27,7 @@ export const populateDatabase = async () => {
   caretakersArray.forEach(async (caretaker) => await saveCaretaker(caretaker));
   cagesArray.forEach(async (cage) => await saveCage(cage));
 
-  const specimenPromisesArray: Promise<Specimen>[] = jsonSpecimen.map((jsonObject) => getSpecimen(jsonObject));
+  const specimenPromisesArray: Promise<Specimen>[] = jsonSpecimen.map(async (jsonObject) => await getSpecimen(jsonObject));
   const specimenArray = await Promise.all(specimenPromisesArray);
 
   specimenArray.forEach(async (specimen) => await saveSpecimen(specimen));
